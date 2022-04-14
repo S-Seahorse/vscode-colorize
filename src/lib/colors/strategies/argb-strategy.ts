@@ -13,7 +13,7 @@ function extractRGB(argb: number[]): [number, number, number] {
     const _argb = argb.slice(-3);
     rgb = [_argb[0], _argb[0], _argb[1], _argb[1], _argb[2], _argb[2]];
   }
-  return [16 * rgb[0] + rgb[1], 16 * rgb[2] + rgb[3], 16 * rgb[4] + rgb[5]];
+  return [16 * rgb[4] + rgb[5], 16 * rgb[2] + rgb[3], 16 * rgb[0] + rgb[1]];
 }
 
 function extractAlpha(argb: number[]): number {
